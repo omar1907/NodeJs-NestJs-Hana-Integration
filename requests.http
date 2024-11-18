@@ -1,0 +1,57 @@
+### Signup
+
+POST http://localhost:3009/auth/signup
+Content-Type: application/json
+
+{
+    "email": "omar3@example.com",
+    "password": "password"
+}
+
+
+### Signin
+
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "omar1@example.com",
+    "password": "password"
+}
+
+###Signout
+POST http://localhost:3000/auth/signout
+
+
+
+###Who am i 
+GET http://localhost:3000/auth/whoami
+
+
+
+
+
+### Find particular user
+GET http://localhost:3000/auth/1
+
+
+### Find all users with email
+GET http://localhost:3000/auth
+
+
+### Delete a particular user
+DELETE http://localhost:3000/auth/2
+
+
+###Update a particular user
+
+PATCH http://localhost:3000/auth/1
+Content-Type: application/json
+
+{
+    "email":"aaa@test.com",
+    "password":"eeeee"
+}
+
+
+### test a session set router
